@@ -1,0 +1,74 @@
+@import "../../sass/_variables.sass";
+
+.hero-layout {
+  padding-bottom: 8.2rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.container-left {
+  margin-bottom: 6rem;
+
+  @media screen and (min-width: 992px) {
+    width: 48%;
+    margin-bottom: 0rem;
+  }
+}
+
+.hero__span {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  margin-bottom: 2rem;
+  border-radius: .8rem;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  color: $azul-claro;
+  background-color: $azul-branco;
+}
+
+.hero__titulo {
+  margin-bottom: 1.8rem;
+
+  font-size: 3.6rem;
+  font-weight: 700;
+
+  color: $roxo-escuro;
+
+  @media screen and (min-width: 992px) {
+    font-size: 5.6rem;
+  }
+}
+
+.hero__descricao {
+  margin-bottom: 4.2rem;
+
+  font-size: 1.6rem;
+
+  color: $cinza-claro;
+
+  @media screen and (min-width: 992px) {
+    font-size: 1.8rem;
+  }
+}
+
+app-ctabutton:nth-of-type(1) {
+  margin-right: 1.8rem;
+}
+
+.hero__img {
+  width: 100%;
+
+  @media screen and (min-width: 992px) {
+    width: 48%;
+  }
+}

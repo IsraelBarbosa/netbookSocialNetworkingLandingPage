@@ -1,0 +1,101 @@
+<header class="header-layout">
+  <div class="container">
+    <div class="header">
+      <div class="container-logo-nav">
+        <img
+          class="header__img-menu"
+          src="../../../assets/img/header/menu.svg"
+          alt="menu"
+          (click)="mostrarNavFixed()"
+        />
+
+        <a class="header__link-logo"
+          ><img
+            class="header__logo"
+            src="../../../assets/img/header/logo.svg"
+            alt="Logo"
+        /></a>
+
+        <nav class="header__nav">
+          <a class="header__nav-link header__nav-link--bold">Home</a>
+          <a class="header__nav-link"
+            >Community
+            <img
+              src="../../../assets/img/header/CaretDown.svg"
+              alt="Caret Down"
+          /></a>
+          <a class="header__nav-link">Blog</a>
+          <a class="header__nav-link">Events</a>
+        </nav>
+      </div>
+
+      <div class="container-form-btn-login">
+        <form
+          class="header__form"
+          [formGroup]="formSearch"
+          (ngSubmit)="sendForm()"
+        >
+          <button class="form__btn-submit" type="submit">
+            <img src="../../../assets/img/header/lupa.svg" alt="Lupa" />
+          </button>
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Search here..."
+            formControlName="search"
+          />
+        </form>
+        <app-ctabutton
+          innerText="Log in"
+          [ctaButtonBold]="true"
+        ></app-ctabutton>
+      </div>
+
+      <div class="header__container-nav-fixed">
+        <div class="container-img-nav-fixed">
+          <img
+            class="container-nav-fixed__img-nav"
+            src="../../../assets/img/header/menu.svg"
+            alt="nav"
+            (click)="mostrarNavFixed()"
+          />
+        </div>
+
+        <nav class="container-nav-fixed__nav-fixed">
+          <a class="nav-fixed__link nav-fixed__link--bold">Home</a>
+          <a class="nav-fixed__link"
+            >Community
+            <img
+              src="../../../assets/img/header/CaretDown.svg"
+              alt="Caret Down"
+          /></a>
+          <a class="nav-fixed__link">Blog</a>
+          <a class="nav-fixed__link">Events</a>
+        </nav>
+
+        <div class="container-form-btn-login-fixed">
+          <form
+            class="container-nav-fixed__form-fixed"
+            [formGroup]="formSearch"
+            (ngSubmit)="sendForm()"
+          >
+            <button class="form-fixed__btn-submit" type="submit">
+              <img src="../../../assets/img/header/lupa.svg" alt="Lupa" />
+            </button>
+            <input
+              class="form-fixed__input"
+              type="text"
+              placeholder="Search here..."
+              formControlName="search"
+            />
+          </form>
+
+          <app-ctabutton
+            innerText="Log in"
+            [ctaButtonBold]="true"
+          ></app-ctabutton>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

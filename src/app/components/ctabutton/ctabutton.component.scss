@@ -1,0 +1,46 @@
+@import "../../sass/_variables.sass";
+
+.cta-button {
+  padding: 2rem 3rem;
+  border: none;
+  border-radius: 1.4rem;
+
+  font-size: 1.4rem;
+
+  color: $branco;
+  background-color: $azul-claro;
+
+  @media screen and (min-width: 992px) {
+    padding: 2.4rem 4.2rem;
+  }
+}
+
+.cta-button--bold {
+  padding: 1.6rem 3.2rem;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  @media screen and (min-width: 992px) {
+    padding: 1.8rem 4.4rem;
+  }
+}
+
+.cta-button--branco {
+  border: 1px solid $azul-branco;
+
+  color: $azul-claro;
+  background-color: transparent;
+}
+
+.cta-button--com-img {
+  padding: 2.2rem 3.8rem;
+
+  @media screen and (min-width: 992px) {
+    padding: 1.8rem 2.8rem;
+  }
+}
+
+.cta-button__img {
+  margin-left: 1rem;
+}

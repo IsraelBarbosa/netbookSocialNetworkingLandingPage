@@ -1,0 +1,16 @@
+<button
+  [ngClass]="{
+    'cta-button': true,
+    'cta-button--bold': ctaButtonBold,
+    'cta-button--branco': ctaButtonBranco,
+    'cta-button--com-img': iconArrowRight
+  }"
+>
+  {{ innerText }}
+  <img
+    class="cta-button__img"
+    src="../../../assets/img/ctaButton/ArrowRight.svg"
+    alt="seta direita"
+    *ngIf="iconArrowRight"
+  />
+</button>
