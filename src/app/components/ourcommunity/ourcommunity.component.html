@@ -1,0 +1,30 @@
+<section class="our-community-layout">
+  <div class="container">
+    <div class="our-community">
+      <div class="container-titulo">
+        <span class="our-community__span">Our Community</span>
+        <h1 class="our-community__titulo">Community Main Feature</h1>
+        <p class="our-community__paragrafo">
+          The wise man therefore always holds in these matters to this principle
+          of selection.
+        </p>
+      </div>
+
+      <div class="container-card">
+        <div class="our-community__card" *ngFor='let card of cards'>
+          <img
+            class="card__img"
+            [src]=card.imgSrc
+            alt="members"
+          />
+          <div class="container-titulo">
+            <h1 class="card__titulo">{{card.titulo}}</h1>
+            <p class="card__paragrafo">
+              {{card.paragrafo}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
