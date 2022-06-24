@@ -8,9 +8,10 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HeroComponent } from './components/hero/hero.component';
 import { CtabuttonComponent } from './components/ctabutton/ctabutton.component';
 import { WhatsnetboksComponent } from './components/whatsnetboks/whatsnetboks.component';
+import { OurachievementComponent } from './components/ourachievement/ourachievement.component';
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, HeaderComponent, HeroComponent, CtabuttonComponent, WhatsnetboksComponent],
+  declarations: [AppComponent, IndexComponent, HeaderComponent, HeroComponent, CtabuttonComponent, WhatsnetboksComponent, OurachievementComponent],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [IndexComponent],
