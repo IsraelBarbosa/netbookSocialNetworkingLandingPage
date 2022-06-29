@@ -1,0 +1,47 @@
+<section class="valuable-team-layout">
+  <div class="container">
+    <div class="valuable-team">
+      <div class="container-titulo-main">
+        <span class="valuable-team__span">Valuable Team</span>
+        <h1 class="valuable-team__titulo">Our Active Members</h1>
+        <p class="valuable-team_paragrafo">
+          when an unknown printer took a galley of type and meeting fari
+          scrambled it.
+        </p>
+      </div>
+
+      <div class="container-select">
+        <button class="valuable-team__button">Newst</button>
+        <button class="valuable-team__button">Popular</button>
+        <button class="valuable-team__button valuable-team__button--active">
+          Active
+        </button>
+      </div>
+
+      <div class="container-members">
+        <div class="member" *ngFor="let member of members">
+          <div class="container-img">
+            <img
+              class="member__img"
+              [src]=member.imgSrcProfile
+              alt="member"
+            />
+            <img
+              class="member__img-circle"
+              src="../../../assets/img/valuableTeam/ellipseCircle.png"
+              alt="check"
+            />
+            <img
+              class="member__img-check"
+              src="../../../assets/img/valuableTeam/check.png"
+              alt="check"
+            />
+          </div>
+
+          <h1 class="member__titulo">{{member.titulo}}</h1>
+          <h2 class="member__sub-titulo">{{member.subTitulo}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
