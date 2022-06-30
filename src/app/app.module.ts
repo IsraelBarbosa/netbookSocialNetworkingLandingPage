@@ -11,9 +11,10 @@ import { WhatsnetboksComponent } from './components/whatsnetboks/whatsnetboks.co
 import { OurachievementComponent } from './components/ourachievement/ourachievement.component';
 import { OurcommunityComponent } from './components/ourcommunity/ourcommunity.component';
 import { ValuableteamComponent } from './components/valuableteam/valuableteam.component';
+import { GetouraplicationComponent } from './components/getouraplication/getouraplication.component';
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, HeaderComponent, HeroComponent, CtabuttonComponent, WhatsnetboksComponent, OurachievementComponent, OurcommunityComponent, ValuableteamComponent],
+  declarations: [AppComponent, IndexComponent, HeaderComponent, HeroComponent, CtabuttonComponent, WhatsnetboksComponent, OurachievementComponent, OurcommunityComponent, ValuableteamComponent, GetouraplicationComponent],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [IndexComponent],

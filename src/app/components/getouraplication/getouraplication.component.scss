@@ -1,0 +1,80 @@
+@import "../../sass/_variables.sass";
+
+.get-our-aplication-layout {
+  margin-bottom: 6rem;
+}
+
+.get-our-aplication {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.container-titulo {
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 992px) {
+    max-width: 60rem;
+    margin-bottom: 0rem;
+    margin-right: 5rem;
+  }
+}
+
+.get-our-aplication__span {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  color: $azul-claro;
+}
+
+.get-our-aplication__titulo {
+  margin-bottom: 1.8rem;
+
+  font-size: 3.6rem;
+  font-weight: 700;
+
+  color: $roxo-escuro;
+}
+
+.get-our-aplication__paragrafo {
+  margin-bottom: 3.6rem;
+
+  font-size: 1.6rem;
+
+  color: $cinza-claro;
+}
+
+.container-button-download {
+  max-width: 32rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.get-our-aplication__button {
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  &:first-child {
+    border: 1px solid $cinza-claro;
+    border-radius: .6rem;
+  }
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+}
+
+.get-our-aplication__img {
+  max-width: 34rem;
+  width: 100%;
+}
