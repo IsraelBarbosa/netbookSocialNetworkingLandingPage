@@ -1,0 +1,33 @@
+<section class="latest-news-layout">
+  <div class="container">
+    <div class="latest-news">
+      <div class="container-titulo">
+        <span class="latest-news__span">Get Our Aplication</span>
+        <h1 class="latest-news__titulo">Latest News</h1>
+      </div>
+
+      <div class="container-card">
+        <div class="latest-news__card" *ngFor="let card of latestNewsCards">
+          <img class="card__img" [src]=card.imgSrc alt="computer" />
+          <div class="container-img-traco-titulo-link">
+            <img
+              class="card__img-traco"
+              src="../../../assets/img/latestNews/traco.png"
+              alt="traco"
+            />
+            <div class="container-titulo-link">
+              <h1 class="card__titulo">{{card.titulo}}</h1>
+              <a class="card__link" href=""
+                >Continue Reading
+                <img
+                  class="link__arrow"
+                  src="../../../assets/img/latestNews/arrowDark.png"
+                  alt="arrow dark"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
