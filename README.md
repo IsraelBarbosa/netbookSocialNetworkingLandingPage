@@ -1,4 +1,17 @@
-# NetbookSocialNetworkingLandingPage
+# Clique no link abaixo para visualizar a pagina
+**(http://netbooksocialnetworking.infinityfreeapp.com/?i=1)**
+
+# Clique no link abaixo para visualizar a pagina
+**(http://netbooksocialnetworking.infinityfreeapp.com/?i=1)**
+
+## NetbookSocialNetworkingLandingPage
+
+Tecnologias usadas:
+
+1. Angular
+2. Sass
+3. Responsive web design
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
