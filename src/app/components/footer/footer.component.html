@@ -1,0 +1,147 @@
+<footer class="footer-layout">
+  <div class="container">
+    <div class="footer">
+      <div class="container-lista-e-subscribe-cirkle">
+        <div class="container-lista">
+          <ul class="footer__lista">
+            <li class="footer__item">
+              <a class="item__link" href="">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Community</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Events</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="footer__lista">
+            <li class="footer__item">
+              <a class="item__link" href="">Resources</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">News</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Guides</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Help Center</a>
+            </li>
+          </ul>
+
+          <ul class="footer__lista">
+            <li class="footer__item">
+              <a class="item__link" href="">Community</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">NewsFeed</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Profile</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Friends</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Forums</a>
+            </li>
+          </ul>
+
+          <ul class="footer__lista">
+            <li class="footer__item">
+              <a class="item__link" href="">Main links</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Members</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Activity</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Groups</a>
+            </li>
+            <li class="footer__item">
+              <a class="item__link" href="">Private Group</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscribe-cirkle">
+          <h1 class="subscribe-cirkle__titulo">Subscribe Cirkle Newsletter</h1>
+          <p class="subscribe-cirkle__paragrafo">
+            Subscribe to be the first one to know about updates. Enter your
+            email
+          </p>
+          <form
+            class="subscribe-cirkle__form"
+            [formGroup]="subscribeNewsletterForm"
+            (ngSubmit)="sendForm()"
+          >
+            <input
+              class="subscribe-cirkle__input"
+              type="text"
+              placeholder="Email Address"
+              formControlName="email"
+            />
+            <button
+              [ngClass]="{
+                'subscribe-cirkle__button': true,
+                'subscribe-cirkle__button--desabilitado':
+                  !subscribeNewsletterForm.valid
+              }"
+              type="submit"
+              [disabled]="!subscribeNewsletterForm.valid"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <p class="bottom__paragrafo">Besnik Creative Agency.</p>
+
+      <img
+        class="bottom__img"
+        src="../../../assets/img/footer/logo.png"
+        alt="logo"
+      />
+
+      <div class="container-redes-sociais">
+        <img
+          class="bottom__rede-social"
+          src="../../../assets/img/footer/twitter.png"
+          alt="twitter-logo"
+        />
+        <img
+          class="bottom__rede-social"
+          src="../../../assets/img/footer/instagram.png"
+          alt="instagram"
+        />
+        <img
+          class="bottom__rede-social"
+          src="../../../assets/img/footer/facebook.png"
+          alt="facebook"
+        />
+        <img
+          class="bottom__rede-social"
+          src="../../../assets/img/footer/linkedin.png"
+          alt="linkedin"
+        />
+      </div>
+    </div>
+  </div>
+</footer>
