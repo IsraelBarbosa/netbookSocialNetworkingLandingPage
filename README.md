@@ -1,8 +1,5 @@
 # Clique no link abaixo para visualizar a pagina
-**(http://netbooksocialnetworking.infinityfreeapp.com/?i=1)**
-
-# Clique no link abaixo para visualizar a pagina
-**(http://netbooksocialnetworking.infinityfreeapp.com/?i=1)**
+**(https://netbooksocialnetworking.netlify.app/**
 
 ## NetbookSocialNetworkingLandingPage
 
